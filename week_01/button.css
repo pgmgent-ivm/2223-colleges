@@ -1,0 +1,23 @@
+.btn {
+    all: unset;
+    background-color: var(--primary);
+    padding: var(--spacing);
+    color: var(--light);
+    border-radius: var(--spacing);
+    border: 2px solid var(--primary);
+    transition: transform 2s ease;
+}
+
+.btn:hover {
+    background-color: var(--light);
+    color: var(--primary);
+}
+
+.btn:focus {
+    outline: 2px solid var(--dark);
+}
+
+.btn:active {
+    transform: scale(1.1);
+}
+

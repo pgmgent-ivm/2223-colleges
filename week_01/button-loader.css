@@ -1,0 +1,30 @@
+.btn--loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-width: 10rem;
+    min-height: 1.25rem;
+}
+
+/* Loading icon bij het inladen van de pagina */
+.btn--loader .btn__icon {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s linear, visibility 0s linear 1s;
+    position: absolute;
+}
+
+/* Loading icon bij het loaden */
+.btn--loading .btn__icon {
+    opacity: 100%;
+    visibility: visible;
+    transition: visibility 0s linear, opacity 1s linear 0.1s;
+}
+
+/* Button text bij het loaden */
+.btn--loading .btn__text {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s linear, visibility 0s linear 1s;
+}
