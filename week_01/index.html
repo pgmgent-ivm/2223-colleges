@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./loader.css">
     <link rel="stylesheet" href="./button.css">
     <link rel="stylesheet" href="./button-loader.css">
+    <link rel="stylesheet" href="./dropdown.css">
+    <link rel="stylesheet" href="./form.css">
 </head>
 <body>
     <h1>
@@ -76,20 +78,69 @@
         <h2>Verborgen elementen animeren</h2>
 
         <div class="dropdown">
-            <span class="dropdown__ button">
+            <button class="dropdown__ button">
                 Diensten
-            </span>
+            </button>
 
-            <ul class="dropdown__list">
+            <ul class="dropdown__list dropdown__list--hidden">
                 <li>
-                    Dienst 1
+                    <a href="/">
+                        Dienst 1
+                    </a>
                 </li>
 
                 <li>
-                    Dienst 2
+                    <a href="/">
+                        Dienst 2
+                    </a>
                 </li>
             </ul>
         </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <form class="form">
+            <label>
+                <input
+                    name="firstName"
+                    type="text"
+                    class="form__input"
+                    placeholder=" "
+                />
+
+                <span class="form__label">
+                    Voornaam
+                </span>
+            </label>
+
+            <label>
+                <input
+                    name="lastName"
+                    type="text"
+                    class="form__input"
+                    placeholder=" "
+                />
+
+                <span class="form__label">
+                    Achternaam
+                </span>
+            </label>
+
+            <label>
+                <input
+                    name="mail"
+                    type="email"
+                    class="form__input"
+                    placeholder=" "
+                />
+
+                <span class="form__label">
+                    E-mail
+                </span>
+            </label>
+        </form>
     </section>
 
     <script src="./main.js"></script>

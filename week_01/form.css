@@ -1,0 +1,35 @@
+.form, .form label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form label {
+    position: relative;
+}
+
+.form__label {
+    position: absolute;
+    margin-bottom: var(--spacing);
+    transition: all 0.25s ease;
+    transform-origin: left 0;
+}
+
+.form__input {
+    border: none;
+    border-bottom: 2px solid var(--faded);
+    height: 1.5rem;
+    margin-bottom: var(--spacing);
+    padding: var(--spacing) 0;
+}
+
+.form__input:focus {
+    outline: none;
+    border-bottom-color: var(--primary);
+}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+    color: var(--primary);
+    transform: scale(.75) translateY(-125%);
+}

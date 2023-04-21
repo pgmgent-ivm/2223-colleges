@@ -1,0 +1,32 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown__list {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 16px);
+    margin: 0;
+    display: inline-flex;
+    flex-direction: column;
+    padding: var(--spacing);
+    list-style: none;
+    background-color: var(--faded);
+    border-radius: var(--dimensions);
+}
+
+.dropdown__list a {
+    color: var(--light);
+}
+
+.dropdown__list {
+    opacity: 100%;
+    visibility: visible;
+    transition: opacity 0.2s ease;
+}
+
+.dropdown__list--hidden  {
+    transition: opacity .5s ease, visibility 0s linear .5s;
+    opacity: 0;
+    visibility: hidden;
+}
