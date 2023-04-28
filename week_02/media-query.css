@@ -1,0 +1,30 @@
+body {
+    font-family: 'Helvetica';
+    scroll-behavior: smooth;
+}
+
+.cards {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+}
+
+.cards li {
+    scroll-snap-align: start;
+    aspect-ratio: 16 / 9;
+    width: 14rem;
+    flex-shrink: 0;
+    background-color: hsl(0, 0%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .cards {
+        flex-wrap: wrap;
+    }
+}

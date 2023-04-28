@@ -1,0 +1,30 @@
+:root {
+    --nav-height: 5rem;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--nav-height);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    height: var(--nav-height);
+}
+
+section {
+    min-height: 100vh;
+    background-color: purple;
+}
+
+section:first-child {
+    margin-top: var(--nav-height);
+}
+
+section:nth-child(odd) {
+    background-color: red;
+}

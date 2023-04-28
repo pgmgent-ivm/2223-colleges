@@ -1,0 +1,8 @@
+.list {
+    font-family: sans-serif
+}
+
+.list li::marker {
+    color: red;
+    font-size: 32px;
+}

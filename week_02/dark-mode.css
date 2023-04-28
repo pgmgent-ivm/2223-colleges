@@ -1,0 +1,22 @@
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+}
+
+body,
+h1 {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.card {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+   :root {
+        --background-color: #000;
+        --text-color: #fff;
+   }
+}

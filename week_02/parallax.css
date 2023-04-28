@@ -1,0 +1,21 @@
+.body {
+    perspective: 2px;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.parallax, .parallax__wrapper {
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.parallax__image {
+    transform: translateZ(-2px) scale(200%); // Waarde?
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    background-color: black;
+    color: white;
+}

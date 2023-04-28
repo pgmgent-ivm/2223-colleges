@@ -1,0 +1,23 @@
+li:has(a) a {
+    color: red;
+}
+
+div:is(.wrapper, .container) {
+    max-width: 756px;
+}
+
+div.container :where(img:not(:nth-of-type(1))) {
+    width: 200px;
+}
+
+.container:has(img:nth-of-type(2)) {
+    background-color: red;
+}
+
+h2:first-child:where(:has(+ p), :has(a)) {
+    color: blue;
+}
+
+h2:has(+ a) {
+
+}

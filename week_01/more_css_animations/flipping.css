@@ -1,0 +1,49 @@
+:root {
+    --offset: 6px;
+  }
+
+  h2 {
+    width: 100%;
+    max-width: 48rem;
+    font-size: 100px;
+    font-family: Helvetica;
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+    color: #1d1d1f;
+  }
+
+  .mask {
+    height: 106px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .mask span {
+    display: block;
+    position: absolute;
+    top: 100%;
+    line-height: 1.25;
+    color: blue;
+  }
+
+  .mask span {
+    transition: 2s transform ease-in-out;
+    animation: flip 1s ease infinite;
+    background: white;
+  }
+
+  .mask span:nth-child(2) {
+    animation-delay: .5s;
+  }
+
+  @keyframes flip {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(-200%);
+    }
+  }

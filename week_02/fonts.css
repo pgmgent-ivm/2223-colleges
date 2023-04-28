@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'AdventPro';
+    src: url('./AdventPro-VariableFont_wdth\,wght.ttf');
+}
+
+body {
+    font-family: 'AdventPro';
+    font-variation-settings: 'wght' 100, 'wdth' 100;
+}
+
+.title {
+    transition: font-variation-settings .25s ease;
+}
+
+.title:hover {
+    font-variation-settings: 'wght' 900, 'wdth' 200;
+}

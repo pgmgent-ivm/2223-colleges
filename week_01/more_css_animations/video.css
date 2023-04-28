@@ -1,0 +1,32 @@
+.video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 21 / 9;
+    overflow: hidden;
+}
+
+.video__element,
+.video__mask {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+}
+
+.video__background {
+    fill: white;
+}
+
+.video__text {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-anchor: middle;
+  }
+
+.video__backdrop {
+    fill: white;
+    mask: url(#mask);
+}
