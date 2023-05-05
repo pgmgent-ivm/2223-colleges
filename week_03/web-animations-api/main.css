@@ -1,0 +1,13 @@
+.box {
+    --dimension: 4rem;
+    --primary: red;
+
+    width: var(--dimension);
+    height: var(--dimension);
+
+    background-color: var(--primary);
+}
+
+.btn {
+    margin: 1rem 0;
+}
