@@ -22,7 +22,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, {
     threshold: 0.1,
-    rootMargin: '-100px 0'
+    rootMargin: '-100px 0px'
 });
 
 $titles.forEach($title => {
