@@ -9,11 +9,11 @@ const fade = ($element, beginAnimations, endAnimations, duration = 1000, delay =
     });
 }
 
-export const fadeIn = ($element, $duration) => {
-    return fade($element, null, null, $duration);
+export const fadeIn = ($element, duration) => {
+    return fade($element, null, null, duration);
 }
 
-export const fadeInUp = ($element, $duration, $delay) => {
-    return fade($element, {transform: 'translateY(1rem)'}, {transform: 'translateY(0)'}, $duration, $delay);
+export const fadeInUp = ($element, duration, delay) => {
+    return fade($element, {transform: 'translateY(1rem)'}, {transform: 'translateY(0)'}, duration, delay);
 }
 
