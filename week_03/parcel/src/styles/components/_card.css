@@ -1,0 +1,14 @@
+.card {
+    background-color: var(--light);
+    color: var(--dark);
+    padding: var(--spacing-base);
+    border-radius: var(--radius-base);
+    box-shadow: var(--shadow);
+
+    opacity: 0;
+    transition: background-color .5s ease;
+
+    &:hover {
+        background-color: red;
+    }
+}
