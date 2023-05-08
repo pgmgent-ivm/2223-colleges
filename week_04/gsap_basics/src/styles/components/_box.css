@@ -1,0 +1,9 @@
+.box {
+    --dimension: 5rem;
+
+    width: var(--dimension);
+    height: var(--dimension);
+
+    background-color: var(--dark);
+    margin-bottom: var(--spacing-base);
+}
