@@ -1,0 +1,16 @@
+.btn {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light);
+    padding: var(--spacing-base);
+    border-radius: var(--radius-base);
+
+    &.btn--square {
+        --dimension: 10rem;
+
+        width: var(--dimension);
+        height: var(--dimension);
+    }
+}

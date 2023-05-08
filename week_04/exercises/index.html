@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parcel App</title>
+
+        <link rel="stylesheet" href="/src/styles/main.css">
+    </head>
+    <body>
+        <h1>GSAP Oefeningen</h1>
+
+        <section>
+            <h2>Tween</h2>
+
+            <button
+            id="box" class="btn btn--square">
+                Klik op mij
+            </button>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Delay between animations</h2>
+
+            <div class="row">
+                <button id="hide" class="btn">Verbergen</button>
+                <button id="retry" class="btn">Opnieuw</button>
+            </div>
+
+            <ul data-animation="stagger-list" class="row">
+                <li class="card">
+                    <strong>Napoli is kampioen.</strong>
+                    <p>Quisque rhoncus ex ut odio fermentum, et iaculis massa tempus.</p>
+                </li>
+                <li class="card">
+                    <strong>Finale Real en Barcelona.</strong>
+                    <p>Quisque rhoncus ex ut odio fermentum, et iaculis massa tempus.</p>
+                </li>
+                <li class="card">
+                    <strong>Arsenal VS. Man City, wie wordt de winnaar?</strong>
+                    <p>Quisque rhoncus ex ut odio fermentum, et iaculis massa tempus.</p>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Opeenvolgende tweens</h2>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Dropdown</h2>
+        </section>
+
+        <hr>
+
+        <script type="module" src="/src/scripts/app.js"></script>
+    </body>
+</html>
