@@ -2,7 +2,7 @@
     --font-display: 'Tahoma', sans-serif;
     --font-normal: 'Verdana', sans-serif;
 
-    --light: hsl(0,0%,90%);
+    --light: hsl(0,0%,70%);
     --dark: hsl(0,0%,0%);
     --transparent-dark: hsla(0, 0%, 0%, 0.09);
 
