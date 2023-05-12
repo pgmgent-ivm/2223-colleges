@@ -1,0 +1,6 @@
+.card {
+    flex-shrink: 0;
+    width: 10rem;
+    aspect-ratio: 3 / 4;
+    background-color: var(--light);
+}

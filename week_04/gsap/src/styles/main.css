@@ -1,5 +1,11 @@
 @import url('./abstracts/_variables.css');
 @import url('./base/_typography.css');
 @import url('./components/_box.css');
+@import url('./components/_card.css');
 @import url('./components/_circle.css');
+@import url('./layout/_row.css');
+@import url('./layout/_container.css');
 
+body {
+    overflow-x: hidden;
+}

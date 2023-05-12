@@ -16,7 +16,6 @@ export const initScrollAnimations = () => {
             start: "0% 75%",
             end: "top 25%",
             scrub: true,
-            markers: true
         }
     });
 }
