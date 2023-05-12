@@ -1,9 +1,9 @@
-.box {
+.square {
     --dimension: 5rem;
 
     width: var(--dimension);
     height: var(--dimension);
 
-    background-color: var(--dark);
+    background-color: var(--primary);
     margin-bottom: var(--spacing-base);
 }

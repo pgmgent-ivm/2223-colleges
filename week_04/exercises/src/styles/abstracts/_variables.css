@@ -5,6 +5,7 @@
     --light: hsl(0,0%,60%);
     --dark: hsl(0,0%,0%);
     --transparent-dark: hsla(0, 0%, 0%, 0.09);
+    --primary: hsl(38, 100%, 50%);
 
     --spacing-sm: .75rem;
     --spacing-base: 1rem;
