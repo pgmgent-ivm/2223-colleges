@@ -1,0 +1,7 @@
+.grid {
+    display: grid;
+    max-width: 30rem;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-base)
+}
