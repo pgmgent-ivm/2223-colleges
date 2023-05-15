@@ -1,0 +1,11 @@
+.square {
+    --dimensions: 5rem;
+    width: var(--dimensions);
+    height: var(--dimensions);
+    background-color: var(--dark);
+    color: var(--light);
+
+    &.square--primary {
+        background-color: var(--primary);
+    }
+}
