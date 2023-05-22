@@ -9,15 +9,20 @@
         <link rel="stylesheet" href="/src/styles/main.css">
     </head>
     <body>
+        <section id="welcome" class="section section--secondary section--fixed">
+            <span>Welkom!</span>
+        </section>
+
         <section>
-            <h1>Embedded ScrollTriggers</h1>
+            <h1 data-animation="fade">Embedded ScrollTriggers en Sequentie animaties</h1>
+            <div data-animation="fade" class="circle"></div>
         </section>
 
         <section data-animation="pin" class="section section--dark">
             <ul data-child="pin" class="row">
-                <li data-child="inner-pin" data-scale="2" class="box"></li>
-                <li data-child="inner-pin" class="box"></li>
-                <li data-child="inner-pin" class="box"></li>
+                <li data-animation="fade" data-child="inner-pin" data-scale="2" class="box"></li>
+                <li data-animation="fade" data-child="inner-pin" class="box"></li>
+                <li data-animation="fade" data-child="inner-pin" class="box"></li>
                 <li data-child="inner-pin" data-scale="4" class="box"></li>
                 <li data-child="inner-pin" data-scale="1" class="box"></li>
                 <li data-child="inner-pin" class="box"></li>
@@ -27,12 +32,12 @@
                 <li data-child="inner-pin" class="box"></li>
             </ul>
 
-            <div data-child="animate-child" class="circle"></div>
+            <div data-animation="fade" data-child="animate-child" class="circle"></div>
         </section>
 
         <section>
             <footer>
-                <strong>
+                <strong data-animation="fade">
                     Footer
                 </strong>
             </footer>
