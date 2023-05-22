@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Embedded ScrollTriggers App</title>
+
+        <link rel="stylesheet" href="/src/styles/main.css">
+    </head>
+    <body>
+        <section>
+            <h1>Embedded ScrollTriggers</h1>
+        </section>
+
+        <section data-animation="pin" class="section section--dark">
+            <ul data-child="pin" class="row">
+                <li data-child="inner-pin" data-scale="2" class="box"></li>
+                <li data-child="inner-pin" class="box"></li>
+                <li data-child="inner-pin" class="box"></li>
+                <li data-child="inner-pin" data-scale="4" class="box"></li>
+                <li data-child="inner-pin" data-scale="1" class="box"></li>
+                <li data-child="inner-pin" class="box"></li>
+                <li data-child="inner-pin" class="box"></li>
+                <li data-child="inner-pin" class="box"></li>
+                <li data-child="inner-pin" class="box"></li>
+                <li data-child="inner-pin" class="box"></li>
+            </ul>
+
+            <div data-child="animate-child" class="circle"></div>
+        </section>
+
+        <section>
+            <footer>
+                <strong>
+                    Footer
+                </strong>
+            </footer>
+        </section>
+
+        <div data-animation="pin" class="section section--dark">
+            <ul data-child="pin" class="row">
+                <li data-child="inner-pin" class="box"></li>
+                <li data-child="inner-pin" class="box"></li>
+                <li data-child="inner-pin" class="box"></li>
+                <li data-child="inner-pin" class="box"></li>
+                <li data-child="inner-pin" class="box"></li>
+                <li data-child="inner-pin" class="box"></li>
+                <li data-child="inner-pin" class="box"></li>
+                <li data-child="inner-pin" class="box"></li>
+                <li data-child="inner-pin" class="box"></li>
+                <li data-child="inner-pin" class="box"></li>
+            </ul>
+        </div>
+
+        <script type="module" src="/src/scripts/app.js"></script>
+    </body>
+</html>

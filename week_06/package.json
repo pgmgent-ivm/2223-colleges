@@ -1,0 +1,22 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "source": "./index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "postcss": "^8.4.23",
+    "postcss-nesting": "^11.2.2"
+  },
+  "dependencies": {
+    "gsap": "^3.11.5"
+  }
+}

@@ -1,0 +1,5 @@
+.row {
+    display: flex;
+    gap: var(--spacing-base);
+    z-index: 1;
+}

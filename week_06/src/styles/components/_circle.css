@@ -1,0 +1,12 @@
+.circle {
+    --dimensions: 10rem;
+
+    position: absolute;
+    left: calc(50% - (var(--dimensions) / 2));
+    width: var(--dimensions);
+    height: var(--dimensions);
+
+    border-radius: 50%;
+
+    background-color: var(--primary);
+}

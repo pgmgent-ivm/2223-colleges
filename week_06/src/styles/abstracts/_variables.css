@@ -1,0 +1,16 @@
+:root {
+    --font-display: 'Tahoma', sans-serif;
+    --font-normal: 'Verdana', sans-serif;
+
+    --light: hsl(0,0%,90%);
+    --dark: hsl(0,0%,0%);
+    --transparent-dark: hsla(0, 0%, 0%, 0.09);
+    --primary: hsl(43, 100%, 46%);
+
+    --spacing-sm: .75rem;
+    --spacing-base: 1rem;
+
+    --radius-base: .5rem;
+
+    --shadow: 2px 2px 4px var(--transparent-dark);
+}

@@ -1,0 +1,14 @@
+section,
+.section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-base);
+    min-height: 100vh;
+    min-height: 100svh;
+
+    &.section--dark {
+        background-color: var(--dark);
+        color: var(--light);
+    }
+}
