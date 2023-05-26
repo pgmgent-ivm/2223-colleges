@@ -1,8 +1,12 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const $scene = document.getElementById('scene');
+const $trigger = document.querySelector("[data-animation='three-d']");
 
 // Setup scene
 const scene = new THREE.Scene();
@@ -63,7 +67,24 @@ loader.load('/car/scene.gltf', (gltf) => {
 
     animate();
 
-    gsap.to(camera.position, {
-        z: 1000
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: $trigger,
+            scrub: true,
+            end: "bottom bottom",
+            markers: true
+        }
     });
+
+    tl.to(camera.position, {
+        x: -500,
+        y: 350,
+        z: 2400,
+        duration: 2,
+        ease: 'power4.inOut'
+    }, 0).to(model.rotation, {
+        z: 2,
+        duration: 2,
+        ease: 'power4.inOut'
+    }, 0);
 });
