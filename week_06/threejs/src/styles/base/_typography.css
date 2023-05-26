@@ -4,6 +4,12 @@ body {
 
 h1, h2, h3, h4 {
     font-family: var(--font-display);
+    color: var(--primary);
+}
+
+h1 {
+    font-size: var(--text-xxl);
+    line-height: .85;
 }
 
 ul {
