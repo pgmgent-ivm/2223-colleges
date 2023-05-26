@@ -3,4 +3,8 @@
     align-items: center;
     min-height: 100vh;
     min-height: 100svh;
+
+    &.section--end {
+        justify-content: flex-end;
+    }
 }
