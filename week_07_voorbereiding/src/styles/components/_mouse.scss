@@ -1,0 +1,7 @@
+.mouse {
+    --dimensions: 6rem;
+    display: block;
+    width: var(--dimensions);
+    height: var(--dimensions);
+    background-color: var(--dark);
+}
